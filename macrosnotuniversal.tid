@@ -1,0 +1,19 @@
+title: $:/plugins/bj/smalltools/macrosnotuniversal
+tags: $:/tags/Macro
+
+\define openAllTagged(temptiddler:"$:/temp/openall" state:"$:/state/opentagged" )
+<$button set=<<qualify "$state$">> setTo="open">Open all tagged</$button> 
+<$edit-text tiddler="$temptiddler$" tag="input" type="text"/>
+<$list filter="""[!has[draft.of]tag{$temptiddler$}sort[created]]""">
+<$link><$click type="match" state=<<qualify "$state$">> text="open"/> </$link>
+</$list>
+\end
+
+\define deleteAllTagged(temptiddler:"$:/temp/deleteall" state:"$:/state/deletetagged" )
+<$button set=<<qualify "$state$">> setTo="delete">delete all tagged</$button> 
+<$edit-text tiddler="$temptiddler$" tag="input" type="text"/>
+<$linkcatcher message=tm-delete-tiddler>
+<$list filter="""[!has[draft.of]tag{$temptiddler$}sort[created]]""">
+<$link><$click type="match" state=<<qualify "$state$">> text="delete"/> </$link>
+</$list>
+\end

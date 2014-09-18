@@ -1,0 +1,10 @@
+{
+	"title": "$:/plugins/bj/smalltools",
+	"description": "Includes 'click trigger' macro",
+	"author": "JeffreyWilkinson",
+	"version": "0.0.1",
+	"list": "readme license",
+	"core-version": ">=5.0.17",
+	"source": "https://github.com/buggyj/TW5-smalltools",
+	"plugin-type": "plugin"
+}
