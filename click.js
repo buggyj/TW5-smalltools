@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/bj/smalltools/click.js
+title: $:/bj/modules/widgets/click.js
 type: application/javascript
 module-type: widget
 
