@@ -1,8 +1,8 @@
 {
 	"title": "$:/plugins/bj/smalltools",
-	"description": "Includes 'click trigger' macro",
+	"description": "Assorted- includes 'click trigger', tag manipulation macros, some message widgets",
 	"author": "JeffreyWilkinson",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"list": "readme license",
 	"core-version": ">=5.0.17",
 	"source": "https://github.com/buggyj/TW5-smalltools",
