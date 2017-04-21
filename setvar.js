@@ -40,6 +40,7 @@ Compute the internal state of the widget
 setvarWiget.prototype.execute = function() {
 	// Get our parameters
     this.msg=this.getAttribute("msg");
+    this.dorefresh=this.getAttribute("refresh");
     if (this.msg) {
 		this.eventListeners = {};
 		this.addEventListeners([
@@ -73,6 +74,7 @@ setvarWiget.prototype.handleSetvarEvent = function(event) {
 		}
 		if (setvar && setval) 
 		this.setVariable(setvar,setval);
+		if (this.dorefresh) this.refreshChildren({});
 	return true;
 };
 
