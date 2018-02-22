@@ -1,6 +1,6 @@
 {
 	"plugins": [
-		"bj/smalltools"
+		"bj/TW5-smalltools"
 	],
 	"themes": [
 		"tiddlywiki/vanilla",
